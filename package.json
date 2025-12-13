@@ -1,7 +1,7 @@
 {
   "name": "lms-react-props",
   "version": "1.0.0",
-  "description": "React homework: Props and Data Display",
+  "description": "React props practice",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
@@ -17,5 +17,4 @@
     "vite": "^5.0.8"
   }
 }
-
 
