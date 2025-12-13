@@ -1,14 +1,11 @@
 import React from 'react';
 import styles from './UserList.module.css';
 
-// Компонент принимает props (массив users)
 function UserList({ users }) {
   return (
     <div className={styles.container}>
       <h2 className={styles.subtitle}>Всего пользователей: {users.length}</h2>
       <ul className={styles.list}>
-        {/* Render создаёт список элементов из массива объектов */}
-        {/* Каждый элемент получает уникальный ключ через key */}
         {users.map((user) => (
           <li key={user.id} className={styles.item}>
             <div className={styles.card}>
@@ -31,5 +28,4 @@ function UserList({ users }) {
 }
 
 export default UserList;
-
 
