@@ -2,7 +2,6 @@ import React from 'react';
 import UserList from './components/UserList';
 import styles from './App.module.css';
 
-// Массив объектов пользователей (вместо базы данных)
 const users = [
   {
     id: 1,
@@ -48,7 +47,6 @@ function App() {
         <h1 className={styles.title}>Список пользователей</h1>
       </header>
       <main className={styles.main}>
-        {/* Передача массива в компонент через props */}
         <UserList users={users} />
       </main>
     </div>
@@ -56,5 +54,4 @@ function App() {
 }
 
 export default App;
-
 
