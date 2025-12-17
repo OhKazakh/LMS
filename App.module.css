@@ -1,7 +1,8 @@
 .app {
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  padding: 20px;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .header {
@@ -10,16 +11,159 @@
 }
 
 .title {
-  color: #ffffff;
-  font-size: 2.5rem;
-  font-weight: 700;
+  color: #e94560;
+  font-size: 2.8rem;
+  font-weight: 800;
   margin: 0;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 4px 20px rgba(233, 69, 96, 0.4);
+  letter-spacing: 2px;
 }
 
 .main {
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
+/* Форма добавления */
+.addForm {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
 
+.formTitle {
+  color: #ffffff;
+  font-size: 1.4rem;
+  margin: 0 0 20px 0;
+  font-weight: 600;
+}
+
+.input {
+  width: 100%;
+  padding: 14px 18px;
+  margin-bottom: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.input:focus {
+  outline: none;
+  border-color: #e94560;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 20px rgba(233, 69, 96, 0.2);
+}
+
+.addButton {
+  width: 100%;
+  padding: 14px 30px;
+  background: linear-gradient(135deg, #e94560 0%, #c73e54 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.addButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+}
+
+.addButton:active {
+  transform: translateY(0);
+}
+
+/* Список досок */
+.boardsList {
+  display: grid;
+  gap: 20px;
+}
+
+.boardCard {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.boardCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  border-color: rgba(233, 69, 96, 0.3);
+}
+
+.boardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.boardTitle {
+  color: #ffffff;
+  font-size: 1.4rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+.boardDescription {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  margin: 0 0 15px 0;
+  line-height: 1.6;
+}
+
+.boardDate {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+}
+
+.deleteButton {
+  padding: 10px 20px;
+  background: transparent;
+  color: #e94560;
+  border: 2px solid #e94560;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.deleteButton:hover {
+  background: #e94560;
+  color: #ffffff;
+  box-shadow: 0 5px 20px rgba(233, 69, 96, 0.4);
+}
+
+.emptyMessage {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.2rem;
+  padding: 60px 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  border: 2px dashed rgba(255, 255, 255, 0.2);
+}
